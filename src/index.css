@@ -7,6 +7,15 @@
   font-family: Outfit, sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0; /* Remove default margin */
+  background-image: url('/src/assets/background-contour.jpg');
+}
+
 #root{
   min-height: 100vh;
   display: flex;
