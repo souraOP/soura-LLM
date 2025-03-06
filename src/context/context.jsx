@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
 import runChat from "../config/gemini";
+import PropTypes from "prop-types";
 
 export const Context = createContext();
 
-const ContextProvider = (props) => {
+const ContextProvider = ({children}) => {
 
     // to save the input data
     const [input, setInput] = useState("");
@@ -92,9 +93,13 @@ const ContextProvider = (props) => {
 
     return (
         <Context.Provider value={contextValue}>
-            {props.children}
+            {children}
         </Context.Provider>
     )
 }
+
+ContextProvider.propTypes = {
+    children: PropTypes.node.isRequired
+};
 
 export default ContextProvider

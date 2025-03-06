@@ -1,12 +1,14 @@
-import React, { useContext, useState, useEffect } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import './Main.css'
 import { assets } from '../../assets/assets'
 import { Context } from '../../context/context'
 import Card from './card'
 
-const randomWords = ["Friend", "Nigga", "Nigger", "Homie", "Buddy", "Bitch", "Slave", "Gay", "Gandu", "Pal"];
+const randomWords = ["Friend", "Sweetie", "Homie", "Buddy", "Bhai", "Pal"];
 
 const Main = () => {
+
+    // const [darkMode, setDarkMode] = useState(true);
 
     const [greetings, setGreetings] = useState('Human');
 
@@ -21,8 +23,11 @@ const Main = () => {
     return (
         <div className='main background-texture'>
             <div className='nav'>
-                <p><a href='/' style={{textDecoration: "none", color: "#e3e3e3"}}>Soura-LLM</a></p>
-                <img src="https://cdn.statically.io/gh/souraOP/soura-llm-assests/main/user_icon.png" alt='soura'/>
+                <p><a href='/' className='nav-brand'>Soura-LLM</a></p>
+                <div className='nav-right'>
+                    {/* <img src={darkMode?assets.darkLight:assets.menu_icon} alt='theme-toggle' onClick={() => setDarkMode(!darkMode)}/> */}
+                    <img src="https://cdn.statically.io/gh/souraOP/soura-llm-assests/main/user_icon.png" alt='soura'/>
+                </div>
             </div>
             <div className='main-container'>
 

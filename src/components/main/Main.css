@@ -11,7 +11,17 @@
     justify-content: space-between;
     font-size: 22px;
     padding: 20px;
-    color: #c9c9c9;
+    color: var(--quinary-color);
+}
+
+.main .nav .nav-brand {
+    color: var(--quaternary-color);
+    text-decoration: none;
+}
+
+.main .nav .nav-right {
+    display: flex;
+    gap: 20px;
 }
 
 .main .nav img {
@@ -34,7 +44,7 @@
 .main .greet-user {
     margin: 50px 0px;
     font-size: 56px;
-    color: #c4c7c5;
+    color: var(--quinary-color);
     font-weight: 500;
     padding: 20px;
 }
@@ -75,7 +85,7 @@
 }
 
 .main .card p {
-    color: #dcdcdcb3;
+    color: var(--quinary-color);
     font-size: 17px;
 }
 
@@ -119,11 +129,11 @@
     outline: none;
     padding: 8px;
     font-size: 18px;
-    color: #e3e3e3;
+    color: var(--quaternary-color);
 }
 
 .search-box input::placeholder {
-    color: #e3e3e3;
+    color: var(--quaternary-color);
 }
 
 .search-box div {
@@ -137,7 +147,7 @@
     margin: 15px auto;
     text-align: center;
     font-weight: 300;
-    color: #e3e3e3;
+    color: var(--quaternary-color);
 }
 
 .result {
@@ -155,7 +165,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #b5b5b5;
+    color: var(--quinary-color);
 }
 
 .result img {
@@ -197,7 +207,7 @@
 
 .result-data p {
     font-size: 18px;
-    color: #e7e7e7;
+    color: var(--quaternary-color);
     font-weight: 300;
     line-height: 1.9;
 }

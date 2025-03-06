@@ -16,6 +16,15 @@ body {
   background-image: url('/src/assets/background-contour.jpg');
 }
 
+:root {
+  --primary-color: #65023e;
+  --secondary-color: #233a68;
+  --tertiary-color: #adabab;
+  --quaternary-color: #e3e3e3;
+  --quinary-color: #b5b5b5;
+  --senary-color: #73abe2;
+}
+
 #root{
   min-height: 100vh;
   display: flex;
